@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppLearning", "WebAppLearning\WebAppLearning.csproj", "{F42DD6D7-F4B0-4627-B999-D72FDCBB3660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcStudent", "MvcWebAppStudent\MvcStudent.csproj", "{1DB22292-372F-4B74-8489-8215B7E4E5AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F42DD6D7-F4B0-4627-B999-D72FDCBB3660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F42DD6D7-F4B0-4627-B999-D72FDCBB3660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F42DD6D7-F4B0-4627-B999-D72FDCBB3660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB22292-372F-4B74-8489-8215B7E4E5AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB22292-372F-4B74-8489-8215B7E4E5AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB22292-372F-4B74-8489-8215B7E4E5AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB22292-372F-4B74-8489-8215B7E4E5AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
