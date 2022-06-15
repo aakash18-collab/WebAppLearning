@@ -1,15 +1,24 @@
-﻿@page
+﻿@page  
 @model WebAppLearning.Pages.Students.IndexModel
 
 @{
     ViewData["Title"] = "Main";
 }
 
-<h1>Index</h1>
+<h1>Students</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Add New</a>
 </p>
+<form>
+    <p>
+        <select asp-for="StudentAbout" asp-items="Model.Abouts">
+            <option value="">All</option>
+        </select>
+        Subject: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -24,6 +33,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Student[0].Age)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Student[0].SubjectTeacher)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Student[0].About)
@@ -46,10 +58,18 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Age)
             </td>
+             <td>
+                    @Html.DisplayFor(modelItem => item.SubjectTeacher)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.About)
             </td>
-            <td>
+          @* <td>
+                <a href="/Movies/Edit?id=1">Edit</a> |
+                <a href="/Movies/Details?id=1">Details</a> |
+                <a href="/Movies/Delete?id=1">Delete</a>
+            </td>*@
+             <td>
                 <a asp-page="./Edit" asp-route-id="@item.StudentID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.StudentID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.StudentID">Delete</a>

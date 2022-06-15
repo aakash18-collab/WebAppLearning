@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAppLearning.Data;
 
@@ -11,9 +12,10 @@ using WebAppLearning.Data;
 namespace WebAppLearning.Migrations
 {
     [DbContext(typeof(WebAppLearningContext))]
-    partial class WebAppLearningContextModelSnapshot : ModelSnapshot
+    [Migration("20220615093430_NEW_Annotations")]
+    partial class NEW_Annotations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

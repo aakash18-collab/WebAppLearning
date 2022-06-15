@@ -14,6 +14,6 @@ namespace WebAppLearning.Data
         {
         }
 
-        public DbSet<WebAppLearning.Models.Student>? Student { get; set; }
+        public DbSet<WebAppLearning.Models.Student> Student { get; set; }
     }
 }

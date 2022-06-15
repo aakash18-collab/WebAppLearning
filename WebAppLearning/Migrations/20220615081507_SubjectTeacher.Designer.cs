@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebAppLearning.Data;
 
@@ -11,9 +12,10 @@ using WebAppLearning.Data;
 namespace WebAppLearning.Migrations
 {
     [DbContext(typeof(WebAppLearningContext))]
-    partial class WebAppLearningContextModelSnapshot : ModelSnapshot
+    [Migration("20220615081507_SubjectTeacher")]
+    partial class SubjectTeacher
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,8 +33,7 @@ namespace WebAppLearning.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentID"), 1L, 1);
 
                     b.Property<string>("About")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("AdmissionDate")
                         .HasColumnType("datetime2");
@@ -41,16 +42,12 @@ namespace WebAppLearning.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("StudentName")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Subject")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SubjectTeacher")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("StudentID");
