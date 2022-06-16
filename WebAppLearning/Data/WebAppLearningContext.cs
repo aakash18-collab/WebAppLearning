@@ -13,7 +13,7 @@ namespace WebAppLearning.Data
             : base(options)
         {
         }
-
+       
         public DbSet<WebAppLearning.Models.Student> Student { get; set; }
     }
 }
