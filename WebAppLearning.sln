@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppLearning", "WebAppLea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcStudent", "MvcStudent\MvcStudent.csproj", "{5B317E38-54C2-44E4-AE45-BE803E3B1837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTest", "WebApiTest\WebApiTest.csproj", "{0AD0FD4C-3DAF-4CD4-8444-28E9BF4B9EBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceryManagementApiTest", "GroceryManagementApiTest\GroceryManagementApiTest.csproj", "{BFF51BEB-21AC-4064-B02A-5C98C0E061D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{5B317E38-54C2-44E4-AE45-BE803E3B1837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B317E38-54C2-44E4-AE45-BE803E3B1837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B317E38-54C2-44E4-AE45-BE803E3B1837}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0AD0FD4C-3DAF-4CD4-8444-28E9BF4B9EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0AD0FD4C-3DAF-4CD4-8444-28E9BF4B9EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0AD0FD4C-3DAF-4CD4-8444-28E9BF4B9EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0AD0FD4C-3DAF-4CD4-8444-28E9BF4B9EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF51BEB-21AC-4064-B02A-5C98C0E061D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF51BEB-21AC-4064-B02A-5C98C0E061D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF51BEB-21AC-4064-B02A-5C98C0E061D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF51BEB-21AC-4064-B02A-5C98C0E061D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
